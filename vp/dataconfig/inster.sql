@@ -1,0 +1,44 @@
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900012', '存量_沉淀率_固定', '0', 'TR99999', '999012', '12', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, '');
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900012', '存量_沉淀率_固定', '0', 'TR99999', '999012', '12', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, '');
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900012', '存量_沉淀率_固定', '0', 'TR99999', '999012', '12', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, '');
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900013', '存量_沉淀率_固定及浮动', '0', 'TR99999', '999013', '13', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, '');
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900014', '存量_提前偿付_常规模型', '0', 'TR99999', '999014', '14', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, '');
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900015', '存量_提前偿付_自定义', '0', 'TR99999', '999015', '15', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, '');
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('TR99999', 'AUTOTEST自动测试父节点', '1', NULL, '999', '999', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900001', '存量_假日不调整', '0', 'TR99999', '999001', '1', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900002', '存量_假日向后', '0', 'TR99999', '999002', '2', '2', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900003', '存量_假日修正向后', '0', 'TR99999', '999003', '3', '3', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900004', '存量_假日向前', '0', 'TR99999', '999004', '4', '4', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900005', '存量_假日修正向前', '0', 'TR99999', '999005', '5', '5', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900006', '存量_还款计划', '0', 'TR99999', '999006', '6', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900007', '存量_指标_固定_到期还本', '0', 'TR99999', '999007', '7', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900008', '存量_指标_固定_等额本金', '0', 'TR99999', '999008', '8', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900009', '存量_指标_浮动_到期还本', '0', 'TR99999', '999009', '9', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900010', '存量_指标_浮动_等额本金', '0', 'TR99999', '999010', '10', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900011', '存量_指标_还款计划', '0', 'TR99999', '999011', '11', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900101', '增量_绝对值_跳跃', '0', 'TR99999', '990000101', '16', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900102', '增量_绝对值_线性', '0', 'TR99999', '990000102', '17', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900103', '增量_百分比_跳跃', '0', 'TR99999', '990000103', '18', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900104', '增量_目标余额_跳跃', '0', 'TR99999', '990000104', '19', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL);
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900105', '增量_目标百分比_跳跃', '0', 'TR99999', '990000105', '20', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL);
+        
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900106', '增量_目标绝对增长值_跳跃', '0', 'TR99999', '990000106', '21', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL);
+        
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900107', '增量_固定_到期还本付息', '0', 'TR99999', '990000107', '22', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL);
+        
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900108', '增量_固定_到期还本分次付息', '0', 'TR99999', '990000108', '23', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '1', '1.000000', '3', '2', '1', NULL, NULL);
+        
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900109', '增量_固定_等额本金', '0', 'TR99999', '990000109', '24', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '3', '1.000000', '3', '2', '1', NULL, NULL);
+        
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900110', '增量_固定_等额本息', '0', 'TR99999', '990000110', '25', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '2', '1.000000', '3', '2', '1', NULL, NULL);
+        
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900111', '增量_浮动_到期还本付息', '0', 'TR99999', '990000111', '26', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST_YC', 'C_AUTO_TEST_YC', '0', '1', '2', '11', '1.000000', '3', '2', '1', '3.000000', '3');
+
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900112', '增量_浮动_到期还本分次付息', '0', 'TR99999', '990000112', '27', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST_YC', 'C_AUTO_TEST_YC', '0', '1', '2', '1', '1.000000', '3', '2', '1', '3.000000', '3');
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900113', '增量_浮动_等额本金', '0', 'TR99999', '990000113', '28', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST_YC', 'C_AUTO_TEST_YC', '0', '1', '2', '3', '1.000000', '3', '2', '1', '3.000000', '3');
+   
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900114', '增量_浮动_等额本息', '0', 'TR99999', '990000114', '29', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST_YC', 'C_AUTO_TEST_YC', '0', '1', '2', '2', '1.000000', '3', '2', '1', '3.000000', '3');
+   
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900115', '增量_期限偏移', '0', 'TR99999', '990000115', '30', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL);
+        
+INSERT INTO AUTO_TEST_ALMCOA_TR VALUES ('9900116', '增量_定价偏移', '0', 'TR99999', '990000116', '31', '1', 'HD_AUTO_TEST', 'C_AUTO_TEST', 'C_AUTO_TEST', '0', '1', '1', '11', '1.000000', '3', '2', '1', NULL, NULL)
