@@ -6,6 +6,7 @@ class WebCrawling():
 
     def __init__(self,url):
         self.header = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"}
+        # self.proxy_ip = {'https':'https://123.149.137.249:9999'}
         self.url = url
 
     def loadWeb(self):
