@@ -7,9 +7,13 @@ def test_00(tokens):
     # tokens.set('zhangsan', 'zhangsan')
     # tokens.set(username='lishi', password='lisi')
 
-def test_01(requests_session, tokens):
+def test_setAdminToken(requests_session, tokens):
     # 设置全局请求对象头的令牌
     requests_session.headers.update({'access_token': tokens.get('sysadmin')})
+
+def test_setZSToken(requests_no_session, tokens):
+    # 设置全局请求对象头的令牌
+    requests_no_session.headers.update({'access_token': tokens.get('zhangsan')})
 
 
 def test_A001(requests_session, base_url):
@@ -25,14 +29,14 @@ def test_A001(requests_session, base_url):
     assert response_data['code'] == 200
 
 
-def test_A002(requests_no_session, tokens, base_url):
+
+def test_A002(requests_no_session, base_url):
     # 非sysadmin分页查询用户，查询后该用户令牌失效
     url = base_url + '/api-sys/sys/user/queryUserForPage'
     data = {
         "page": 1,
         "size": 15
     }
-    requests_no_session.headers.update({'access_token': tokens.get('zhangsan')})
     r = requests_no_session.post(url, json=data)
     assert r.status_code == 200
     response_data = r.json()
@@ -71,3 +75,23 @@ def test_A005(connect):
 
 if __name__ == "__main__":
     pytest.main(["-s", "test_a.py"])
+
+
+class test_Token:
+    t = {}
+
+    def set(v):
+        self.t['token'] = v
+
+    def get():
+        return self.t['token']
+
+a = test_Token()
+a.set('1')
+
+b = test_Token()
+b.set('2')
+
+a.get() #1
+b.get() #2
+

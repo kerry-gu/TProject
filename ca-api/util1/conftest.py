@@ -23,7 +23,7 @@ DB_SETTING = {
 
 @pytest.fixture(scope='session')
 def requests_session():
-    with req.session() as session:a
+    with req.session() as session:
         session.headers.update({
             'Content-Type': 'application/json'
         })
@@ -44,7 +44,7 @@ def base_url():
 class _TokenList:
     _data = {}
 
-    def set(self, username: str, password: str) -> str:
+    def getServerToken(self, username: str, password: str):
         data = {
             'username': username,
             'password':password,
@@ -55,20 +55,24 @@ class _TokenList:
         }
         url = BASE_URL + "/api-auth/oauth/user/token"
         with req.session() as session:
-            session.headers.update({'Content-Type': 'application/json'})
+            # session.headers.update({'Content-Type': 'application/json'})
+            # session.headers = {'Content-Type': 'text' }
             r = session.post(url, json=data, headers=headers)
             assert r.status_code == 200
 
             # 此处保存用户的 Token 信息
             response_data = r.json()
             assert response_data['code'] == 200
+            # _data = {"sysadmin":"wer12341234wer"}
+            # _data = {"zhangsan":"w123544341234r"}
             self._data[username] = response_data['data']['access_token']
-            # 
 
             return response_data['data']['access_token']
 
 
-    def get(self, username: str) -> str:
+    def get(self, username: str):
+        if not username in self._data.keys():
+            return self.getServerToken(username,password)
         return self._data[username]
 
 @pytest.fixture(scope='session')
@@ -79,7 +83,7 @@ def tokens():
 class _DBConnections:
     _data = {}
 
-    def get(self, database: str) -> pymysql.connections.Connection:
+    def get(self, database: str): # -> pymysql.connections.Connection
         if not database in self._data.keys():
             self._data[database] = pymysql.connect(
                 host=DB_SETTING[database]['HOST'],
