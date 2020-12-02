@@ -1,7 +1,7 @@
 import requests as rq
 import json
 import pytest
-# 请求swagger接口，接口文件存储至变量
+
 class ReqSwag:
     _apijson={}
     

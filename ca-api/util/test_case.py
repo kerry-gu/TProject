@@ -1,9 +1,11 @@
 import pytest
 import requests
+import allure
+
 
 # def test_01(apijson):
 #     apijson.getSwag()
-
+@allure.feature("测试")
 def test_00(tokens):
     tokens.setToken('sysadmin', 'admin')
   

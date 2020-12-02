@@ -1,4 +1,5 @@
 import sys
+import allure
 sys.path.append('..')
 
 from utils.WebCrawling import WebCrawling
