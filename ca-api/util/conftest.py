@@ -12,7 +12,7 @@ class ReqSwag:
             'Content-Type': 'application/json'
             }
         self.url = "http://192.168.6.86:7001/v2/api-docs"
-        with rq.session as s:
+        with rq.session()as s:
             s.header.update(self.header)
             _json = s.get(url = self.url,headers=self.header)
             _json = _json.json()

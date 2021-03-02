@@ -1,0 +1,22 @@
+import requests
+import pytest
+from util.commonlib import get_test_data
+
+class TestInPost():
+    def test_in_post(self):
+        host = 'http://jsonplaceholder.typicode.com'
+        case,parameters = get_test_data('./data/test_in_post.yaml')
+        list_params = list(parameters)
+        r = requests.request(
+                list_params[0][1]['method'],
+                url = host + list_params[0][1]['path'],
+                headers = list_params[0][1]['headers'],
+                json = list_params[0][1]['body'])
+        respons = r.json()
+
+        assert respons['title'] == list_params[0][2]['response']['title']
+        assert respons['body'] == list_params[0][2]['response']['body']
+        assert respons['userId'] == list_params[0][2]['response']['userId'],'实际的userid是:{}'.format(response['userid'])
+
+a=TestInPost()
+print (a.test_in_post())
