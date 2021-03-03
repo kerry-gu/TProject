@@ -1,0 +1,29 @@
+tests:
+- case: 新增定价方法
+  http:
+    method: POST
+    path: /vp/ftp/ruleTemplate/save
+    headers:
+      Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+      Accept: application/xml;application/json;charset=utf-8
+      X-Requested-With: XMLHttpRequest
+    body:
+      creator: 
+      createdTm: 
+      modifier: 
+      modifiedTm: 
+      operateType: 1
+      templateId: 
+      templateType: 1
+      templateCode: 1
+      templateName: 1
+      ruleTemplateFields[0].templateId: 
+      ruleTemplateFields[0].templateFieldId: 
+      ruleTemplateFields[0].operateType: 1
+      ruleTemplateFields[0].templateType: 1
+      ruleTemplateFields[0].elementField: scaleFlag
+      ruleTemplateFields[0].oldelementField: 
+      ruleTemplateFields[0].caliberFlag: 0
+      ruleTemplateFields[0].fieldNumOld: 
+      ruleTemplateFields[0].fieldNum: 1
+      ruleTemplateFields[0].caliberGroupCode: 
