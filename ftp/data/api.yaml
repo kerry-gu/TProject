@@ -1,8 +1,20 @@
+---
 tests:
+- case: cookies
+  http:
+    method: POST
+    path: http://192.168.13.125:7001/vp/isLogin/validLogin
+    headers:
+      Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+      Accept: application/xml;application/json;charset=utf-8
+      X-Requested-With: XMLHttpRequest
+    body:
+      username: sysadmin
+      password: 111111
 - case: 新增定价方法
   http:
     method: POST
-    path: /vp/ftp/ruleTemplate/save
+    path: http://192.168.13.125:7001/vp/ftp/ruleTemplate/save
     headers:
       Content-Type: application/x-www-form-urlencoded; charset=UTF-8
       Accept: application/xml;application/json;charset=utf-8
