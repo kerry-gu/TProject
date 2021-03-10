@@ -3,7 +3,7 @@ tests:
 - case: cookies
   http:
     method: POST
-    path: http://192.168.13.125:7001/vp/isLogin/validLogin
+    path: /vp/isLogin/validLogin
     headers:
       Content-Type: application/x-www-form-urlencoded; charset=UTF-8
       Accept: application/xml;application/json;charset=utf-8
@@ -14,7 +14,7 @@ tests:
 - case: 新增定价方法
   http:
     method: POST
-    path: http://192.168.13.125:7001/vp/ftp/ruleTemplate/save
+    path: /vp/ftp/ruleTemplate/save
     headers:
       Content-Type: application/x-www-form-urlencoded; charset=UTF-8
       Accept: application/xml;application/json;charset=utf-8
