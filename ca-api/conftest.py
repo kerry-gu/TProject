@@ -1,13 +1,15 @@
-import json
+import os
+import requests as re
 import pytest
 import yaml
-import requests as re
 import logging
 from util.commonlib import get_test_data
-cases, list_params = get_test_data("./data/api.yaml")
-class TestInPost():
+cases, list_params = get_test_data("./data/login.yaml") 
+
+class Testgetcookies():
+    _cookie = {}
     @pytest.mark.parametrize('case,http',list(list_params), ids=cases)
-    def test_1(self,case,http,env):
+    def savacookie(self,case,http,env):
         print('-----------')
         log = logging.getLogger('test1')
         log.info('~~~~~~~~~~~~~~~~~~')
@@ -20,5 +22,11 @@ class TestInPost():
             print(_json)
             log.info(_json)
             log.debug(_json)
-            # return _json
-            assert _json.status_code == 200
+            res=re.utils.dict_from_cookiejar(_json.cookies)
+            _cookie=response_data
+            return self._cookie
+
+@pytest.fixture(scope='session')
+def cook():
+    return self._cookie
+

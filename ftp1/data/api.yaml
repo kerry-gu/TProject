@@ -16,8 +16,8 @@ tests:
       operateType: 1
       templateId: 
       templateType: 1
-      templateCode: test0100
-      templateName: 666
+      templateCode: 7
+      templateName: 8
       ruleTemplateFields[0].templateId: 
       ruleTemplateFields[0].templateFieldId: 
       ruleTemplateFields[0].operateType: 1

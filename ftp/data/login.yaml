@@ -1,0 +1,13 @@
+---
+tests:
+- case: cookies
+  http:
+    method: POST
+    path: /vp/login.jsp
+    headers:
+      Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+      Accept: application/xml;application/json;charset=utf-8
+      X-Requested-With: XMLHttpRequest
+    body:
+      username: sysadmin
+      password: 111111

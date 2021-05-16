@@ -1,0 +1,11 @@
+---
+tests:
+- case: getmodule
+  http:
+    method: POST
+    path: /vp/queryUserModule
+    headers:
+      Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+      Accept: application/xml;application/json;charset=utf-8
+      X-Requested-With: XMLHttpRequest
+    body:
